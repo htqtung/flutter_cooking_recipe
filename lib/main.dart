@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import './screens/filters_screen.dart';
 import './screens/tabs_screen.dart';
 import './screens/meal_detail.dart';
 import './screens/category_meals.dart';
@@ -9,7 +10,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
       // go to this route whenever a named route is unreachable (typo, unregistered,...)
       // onGenerateRoute: (settings) {
